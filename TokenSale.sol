@@ -18,16 +18,16 @@ contract ERC20TokenSale {
     
     function ERC20TokenSale(ERC20Token _tokenContract, uint256 _tokenPrice) public {
         admin = msg.sender;
-        if(tokensSold <= 30000) 
+        if(tokensSold <= 300000000000000000000000) 
         {
         stage = saleStage.Initial;
         } 
         else 
-        if(tokensSold > 30000 && tokensSold <=50000)
+        if(tokensSold > 300000000000000000000000 && tokensSold <=500000000000000000000000)
         {
          stage = saleStage.Second;
         }
-        else if (tokensSold > 50000){
+        else if (tokensSold > 500000000000000000000000){
             stage = saleStage.Final;
         }
 
